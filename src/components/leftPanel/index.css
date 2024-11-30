@@ -1,0 +1,12 @@
+.left-root-container {
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+  gap: 4px;
+  height: -webkit-fill-available;
+  cursor: context-menu;
+}
+
+.folder-root {
+  width: 100%;
+}

@@ -1,0 +1,54 @@
+.right-root-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 4px;
+  height: 100%;
+}
+
+.right-root-container .path-root {
+  display: flex;
+  align-items: center;
+}
+
+.right-root-container .path-root .curlName {
+  flex: 1;
+}
+
+.right-root-container .action-btn {
+  display: flex;
+  gap: 1em;
+}
+
+.right-root-container .action-btn button, button.send {
+  padding: 0.6em 1em;
+  font-weight: 600;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #aaa;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.right-root-container .action-btn button:hover, button.send:hover {
+  box-shadow: 0 0 4px 0px #666;
+  color: #fff;
+}
+
+.url-bar-root {
+  display: flex;
+  gap: 1em;
+}
+button.send {
+  padding-left: 2em;
+  padding-right: 2em;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 2px;
+  background-color: #0265d2;
+}

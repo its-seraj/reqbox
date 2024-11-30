@@ -1,0 +1,52 @@
+.data-bar-root {
+  display: flex;
+  gap: 2em;
+  font-size: 1.2em;
+  margin: 1em 5px;
+  cursor: pointer;
+  color: #aaa;
+}
+
+.data-bar-root .selected {
+  color: #fff;
+}
+
+.resizable-h {
+  /* border: 1px solid; */
+  height: -webkit-fill-available;
+  display: flex;
+  flex-direction: column;
+}
+
+.resizable-h .right-panel {
+  border-radius: 12px;
+}
+
+.resizer-h {
+  width: 100% !important;
+  height: 5px;
+  cursor: ns-resize;
+  background-color: #272a3e;
+}
+
+.data-body-root {
+  overflow-y: auto;
+}
+
+.data-body-root > .MuiPaper-root {
+  border: 1px solid var(--border);
+}
+
+.data-body-root .body-menu {
+  margin-left: 2em;
+}
+
+.body-menu-container {
+  height: calc(100% - 42px);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.body-menu-container .json-editor {
+  height: 100%;
+}

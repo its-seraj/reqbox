@@ -1,0 +1,21 @@
+.resizable-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.left-panel {
+  background-color: #24273f;
+  overflow: auto;
+}
+
+.resizer {
+  cursor: ew-resize;
+  background-color: #272a3e;
+}
+
+.right-panel {
+  background-color: #1e2235;
+  flex: 1;
+  overflow: auto;
+}
