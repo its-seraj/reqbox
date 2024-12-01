@@ -19,3 +19,14 @@
   flex: 1;
   overflow: auto;
 }
+
+.login-modal-root {
+  background-color: unset !important;
+}
+
+.login-modal-root .MuiOutlinedInput-input {
+  color: var(--title-color);
+  text-align: center !important;
+  letter-spacing: 10px;
+  width: 260px;
+}
