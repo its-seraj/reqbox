@@ -27,6 +27,7 @@ export const FolderContextMenu = ({ isOpen = false }) => {
       try {
         const response = await fetch(`${window._env_.CODE_SNIPPETS_BACKEND}/folder`, {
           method: "POST",
+          credentials: "include",
           headers: {
             "Content-Type": "application/json",
           },

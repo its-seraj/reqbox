@@ -31,8 +31,9 @@ export const RightPanel = (props) => {
         body,
       };
 
-      const response = await fetch("https://code-snippets-backend.onrender.com/proxy", {
+      const response = await fetch(`${window._env_.CODE_SNIPPETS_BACKEND}/proxy`, {
         method: "POST",
+        credentials: "include",
         headers: {
           "Content-Type": "application/json",
         },
@@ -94,6 +95,7 @@ export const RightPanel = (props) => {
 
         const response = await fetch(`${window._env_.CODE_SNIPPETS_BACKEND}/request`, {
           method: "POST",
+          credentials: "include",
           headers: {
             "Content-Type": "application/json",
           },
@@ -113,6 +115,7 @@ export const RightPanel = (props) => {
     try {
         const response = await fetch(`${window._env_.CODE_SNIPPETS_BACKEND}/request?requestId=${currentRequestId}`, {
           method: "DELETE",
+          credentials: "include",
           headers: {
             "Content-Type": "application/json",
           },
